@@ -8,6 +8,10 @@
     if (array_key_exists($id, $recipients)) {
         $to = $recipients[$id]["To"];
         $from = $recipients[$id]["From"];
+    } else {
+        http_response_code(404);
+        include('404.php');
+        die();
     }
 ?>
 <!DOCTYPE html>
