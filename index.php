@@ -3,9 +3,11 @@
     
     $id = $_GET['id'];
 
-    $name = "";
+    $to = "";
+    $from = "";
     if (array_key_exists($id, $recipients)) {
-        $name = $recipients[$id];
+        $to = $recipients[$id]["To"];
+        $from = $recipients[$id]["From"];
     }
 ?>
 <!DOCTYPE html>
@@ -47,7 +49,7 @@
         <h1><span lang="cy">Nadolig Llawen</span><br /><span id="snowflake">❄</span><br /><span lang="en">Merry Christmas</span></h1>
         <img id="cerdyn" src="img/Cerdyn_Nadolig_2020_gwe.svg" />
         <p><span lang="cy">I</span> / <span lang="en">To</span></p>
-        <p><?=$name ?></p>
+        <p><?=$to ?></p>
         <p><span lang="cy">Oddiwth</span> / <span lang="en">From</span></p>
         <p><?=$from ?></p>
     </body>

@@ -1,7 +1,5 @@
 <?php
     $recipients = [
-        "12345" => "Mr Nobody Jones",
-        "56789" => "Bill and Ben the Flowerpot Men"
+        "12345" => [ "To" => "Mr Nobody Jones", "From" => "Ellyll &amp; Ashandra" ],
+        "56789" => [ "To" => "Bill and Ben the Flowerpot Men", "From" => "Sion Corn" ]
     ];
-
-    $from = "Ellyll &amp; Ashandra";
